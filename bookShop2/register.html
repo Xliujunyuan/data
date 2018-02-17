@@ -1,0 +1,215 @@
+	<!DOCTYPE html>
+		<html lang="en">
+		<head>
+		<meta charset="UTF-8"/>
+    <title>淘宝注册</title>
+	
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3"/>
+    <meta http-equiv="description" content="this is my page"/>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+   
+  <style>
+  *{
+  	margin:0px;
+  	padding:0px;
+  }
+  hr{width:78%}
+  #rglogo{
+  margin-left:-60%;
+  }
+  
+.regbg{
+margin-top:30px;
+	width:78%;
+	height:400px;
+	background-image: url(./images/regsiter.PNG);
+}
+
+.tabletop{
+	margin-top:50px;
+	width:50%;
+	height:40px;
+	background-color: #61A4D9;
+	 border-radius:25px 25px 0px 0px; 
+		
+}
+
+
+.zc{
+	background-color:#FFF;
+	width:50%;
+ 	opacity:0.8;
+}
+
+h1{
+	line-height:40px;
+	color:#FFF;
+}
+
+span{
+color:red;
+}
+
+.rebg{
+width:100%;
+	background-image:url(images/timg.png);
+}
+
+input{
+
+	margin:20px 0px 10px 0px;
+	width:180px;
+}
+
+
+input[type='radio']{
+    width:50px;
+}
+
+  input[type='date']{
+      width:200px;
+  }
+
+input[type='submit']{
+width:500px;
+height:30px;
+border-radius:10px ;
+background-color:#F63;
+}
+
+
+
+  </style>
+
+
+ <center>
+<div id="rglogo">
+<img src="images/tbregister.png"/>
+</div>
+<hr/>
+
+<div class="rebg">
+<div class="tabletop"><h1>欢迎新用户注册</h1></div>
+<div class="zc">
+<form name="register" method="post" action="register.php" onsubmit="return  check()" >
+    <table>
+        <tr>
+            <td >
+<span>*</span><label >用户名:</label><input  autocomplete="off" type="text" name="username"  placeholder="用户名" value="" autofocus required oninvalid="setCustomValidity('用户名不能为空')" oninput="setCustomValidity('')"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span>*</span><label>密码:</label><input type="password" name="passwd1" placeholder="密码长度必须是6-18个字符" required oninvalid="setCustomValidity('密码不能为空')" oninput="setCustomValidity('')"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+<span>*</span><label>确认密码:</label><input  id="but" type="password" name="passwd2" placeholder="请再次密码"  value=""/>
+        </td>
+        </tr>
+        <tr>
+            <td>
+    <label></label>电子邮箱:</label><input type="email" name="email" placeholder="请输入邮箱地址"  required value=""/>
+        </td>
+        </tr>
+        <tr>
+            <td>
+    <span>*</span>生日:</label><input name="birdaytime" type="date"  required value=""/>
+        </td>
+        </tr>
+        <tr>
+            <td >
+                <span>*</span><label>性别:</label><input type="radio" checked name="gender" value="man"><label name="man">男</label>&nbsp;
+<input type="radio" name="gender" value="women"><label>女</label>
+        </td>
+        </tr>
+        <tr>
+            <td>
+<input type="submit"  value="立即注册"  /></input>
+        </td>
+        </tr>
+    </table>
+</form>
+</div>
+</div>
+</center>
+
+ <script type="text/javascript" src="./js/jquery-1.8.3.js"></script>
+ <script>
+
+       /* 表格居中*/
+     $(function(){
+         $("td").attr("align","center");
+
+     });
+                 
+                         /*注册验证*/
+
+      function check() {
+
+                  var passwd1= $("input[name='passwd1']");
+                var passwd2= $("input[name='passwd2']");
+
+                    var reg=/^[a-z0-9_-]{6,18}$/;
+
+                        /*  判断密码格式*/
+                    if(passwd1.val().length!=0){
+
+                        if(!reg.test(passwd1.val())){
+                            passwd1.after("<span>密码格式不正确</span>");
+                        }
+
+                        else{
+                            if(passwd1.val()==passwd2.val()){
+                                    return true;
+                            }
+                            else{
+                                passwd2.after("<span>两次密码不一致</span>")
+
+                                passwd2.focus(
+
+                                    function () {
+
+                                        $(this).val("");
+                                        if($(this).next().is("span"))
+                                        {
+                                            $(this).next().remove();
+                                        }
+                                    }
+
+
+                                )
+                            }
+
+                        }
+
+                        passwd1.focus(
+
+                            function () {
+
+                                $(this).val("");
+                                if($(this).next().is("span"))
+                                {
+                                    $(this).next().remove();
+                                }
+                            }
+
+
+                        )
+
+                    }
+
+
+
+
+
+
+            return false;
+
+       }
+
+
+
+                         
+ </script>
