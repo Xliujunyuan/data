@@ -1,0 +1,360 @@
+#search {
+	width: 100%;
+	height: 75pt
+}
+
+#searchleft,#searchmiddle,#searchnav ul li
+,#searchright,.hot,.Contextnav,.contextnavli
+,.contextnavli ul li,#Contextleft
+{
+	float: left;
+}
+
+
+.menunav{
+	background-color:#fff;
+	color: red;
+}
+
+#searchleft {
+	margin: 10px 30px 0 300px
+}
+
+#searchmiddle {
+	
+	padding-top: 5px
+}
+
+#searchnav ul li {
+	margin: 10px 15px 10px 0
+}
+
+#searchnav ul li a {
+	color: #999;
+	font-size: 14px;
+	font-family: '宋体'
+}
+
+.searchnava,.one a:hover{
+	text-decoration: underline
+}
+
+#searchnav ul:first-child{
+	margin-left:-20px;
+}
+
+#searchnav ul li a:hover{
+	text-decoration: underline;
+	color:red;
+}
+
+#searchnav>ul>li:nth-child(12) a{
+	color:red;
+}
+
+.contextnavli>ul>li:first-child>a{
+	color:red;
+	background-color:#fff;
+}
+
+.textsearch {
+	margin: 10px;
+	width: 600px;
+	height: 30px;
+	border: 3px solid #ff4b37
+}
+
+.textsearcha {
+	color: #999;
+	text-indent: 4ex
+}
+
+.textsearchaafter {
+	color: #000;
+	text-indent: 2ex;
+	font-size: 15px
+}
+
+.buttonsearch {
+	margin-left: -18px;
+	width: 75pt;
+	height: 40px;
+	border: 3px solid #ff4b37;
+	background-color: #ff4b37;
+	color: #fff
+}
+
+#searchright {
+	margin: 10px 0 0 20px
+}
+
+.Contextnav {
+	width: 100%;
+	height: 40px;
+	background-color: #ff4b37
+}
+
+.hot {
+	margin-left: 320px;
+	width: 224px;
+	height: 100%;
+	background-color: #fb3c26
+}
+
+.hot a{
+	display:inline-block;
+	color:#fff;
+	margin:10px;
+}
+
+
+.contextnavli ul li {
+	margin: 10px 10px 15px 0;
+	width: 130px;
+	height: 25px;
+	border-right: 1px solid #999
+}
+
+.contextnavli ul li a {
+	display: block;
+	width: 90pt;
+	height: 25px;
+	color: #fff;
+	line-height: 25px
+}
+
+.contextnavli ul li a:hover {
+	background-color: #fff;
+	color: red
+}
+
+.f{
+	position:relative;
+}
+
+.ntn{
+	position:absolute;
+	z-index:2;
+}
+
+.ntn ul li {
+		
+	margin: 0;
+	margin-left: -35px;
+	border-right: none
+}
+
+.ntn ul li,.ntn ul li a{
+	width: 90pt;
+	background-color: #fff
+}
+
+.ntn ul li a {
+	display: block;
+	color: #000
+}
+
+.ntn ul li a:HOVER {
+	background-color: #999;
+	color: #fff
+}
+
+
+
+#Contextbackground {
+	margin-top: 5px;
+	width: 100%;
+	height: 20pc;
+	background-color: #bb0f05;
+	animation: bgdcolorchange 6s;
+	animation-iteration-count: infinite;
+	-o-animation: bgdcolorchange 6s;
+	-o-animation-iteration-count: infinite;
+	-webkit-animation: bgdcolorchange 6s;
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation: bgdcolorchange 6s;
+	-moz-animation-iteration-count: infinite
+}
+
+@keyframes bgdcolorchange {
+	0% {
+		background-color: #bb0f05
+	}
+
+	25% {
+		background-color: #0d76f5
+	}
+
+	50% {
+		background-color: #cafff7
+	}
+}
+
+@-webkit-keyframes bgdcolorchange {
+	0% {
+		background-color: #bb0f05
+	}
+
+	25% {
+		background-color: #0d76f5
+	}
+
+	50% {
+		background-color: #cafff7
+	}
+}
+
+#Contextleft {
+	float:left;
+	height: 280px;
+	width: 14pc;
+	margin-left: 20pc;
+	background-color: #333a4a
+
+}
+
+.Contextleftdiv {
+	height: 250px;
+	margin-top: 20px;
+	margin-bottom: 10px
+}
+
+.Contextleftdivlidiv {
+	width: 221px;
+	border-left: 3px solid #333a4a
+}
+
+.Contextleftdivlidiv:hover {
+	background-color: #000;
+	width: 221px;
+	border-left-color: red
+}
+
+.Contextleftdivlidiv a {
+	display: inline-block;
+	line-height: 30px;
+	color: #fff;
+	font-size: 13px;
+	margin-left: -6px
+}
+
+.Contextleftdivlidiv a:hover {
+	text-decoration: underline
+}
+
+.Contextleftdivlidiv span {
+	display: inline-block;
+	color: #fff;
+	font-size: 15px
+}
+
+
+
+.Contextleftdivlidiv>:first-child{
+	 font-weight: bold;
+ 	margin-right: 10px; 
+}
+
+
+.fdiv {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 5in;
+	height: 16pc
+}
+
+.firstdivsleft,.firstdivsright {
+	float: left;
+	width: 48%;
+	height: 100%
+}
+
+.firstdivsright{
+margin-left: 19px;
+}
+
+ .one a {
+	font-size: 13px;
+	color: #000;
+	line-height: 13px;
+	float:left;
+	 margin:5px 15px 0px 0px;  
+}
+
+
+
+
+.one a:hover {
+	color: red;
+}
+
+
+
+.one :first-child{
+	float:left;
+	margin-top:10px;
+
+}
+
+.one:nth-child(1),.one:nth-child(4){
+	margin-top:-10px;
+}
+
+.oneson{
+	float:right;
+	margin-top: 10px;
+	margin-right:-20px;
+}
+
+ #cdeight>:first-child{
+	margin-left:3px
+} 
+
+.eightdiv,.firstdiv,.fivediv,.fourdiv,.seconddiv,.sevendiv,.sixdiv,.thirddiv {
+	float: left;
+	position: absolute;
+	z-index: 3;
+    z-index: 250;
+	width: 498px;
+	height: 276px;
+	background-color: #fff;
+	border: 2px solid #000;
+	border-left: none;
+	display: none
+}
+
+#cdeight:hover .eightdiv,#cdfirst:hover .firstdiv,#cdfive:hover .fivediv,#cdfour:hover .fourdiv,#cdsecond:hover .seconddiv,#cdseven:hover .sevendiv,#cdsix:hover .sixdiv,#cdthird:hover .thirddiv {
+	display: block
+}
+
+.firstdiv {
+	margin: -50px 0 0 221px
+}
+
+.seconddiv {
+	margin: -5pc 0 0 221px
+}
+
+.thirddiv {
+	margin: -110px 0 0 221px
+}
+
+.fourdiv {
+	margin: -140px 0 0 221px
+}
+
+.fivediv {
+	margin: -170px 0 0 221px
+}
+
+.sixdiv {
+	margin: -200px 0 0 221px
+}
+
+.sevendiv {
+	margin: -230px 0 0 221px
+}
+
+.eightdiv {
+	margin: -260px 0 0 221px
+}
