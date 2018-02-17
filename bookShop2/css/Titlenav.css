@@ -1,0 +1,155 @@
+#header {
+	width: 100%;
+	height: 30px;
+	background-color: #f5f5f5;
+	line-height: 30px
+}
+
+#right>:first-child{
+	float: left;
+	color:red;
+	margin-right:15px;
+}
+
+#left,#right,ul li{
+	float: left;
+}
+
+#left a,.rightulli{
+	color:red;
+}
+
+
+
+.rightulli,.navdiv,.fstfsimple 
+{background-color: #fff}
+
+
+#first a,#second a,#third a,#forth a{
+	margin-top: 10px;
+	display: inline-block;
+	text-align: center;
+	width:25px;
+}
+
+#first a:hover,#second a:hover,#third a:hover,#forth a:hover{
+	color: #fff
+}
+
+#first,#second,#third{
+	width:25%;
+}
+
+
+#left {
+	margin-left: 23%
+}
+
+#right {
+	margin-left: 15%;
+	width: 45%
+}
+
+
+.firstchild {
+	margin-right:10px; 
+}
+
+#right ul li {
+	width: 5pc;
+	text-align: center;
+	font-size: 9pt
+}
+
+#right ul li a {
+	color: #000
+}
+
+
+#nav {
+	width: 85px
+}
+
+.navdiv {
+	position: absolute;
+	border: 1px solid #f5f5f5;
+	border-top: none;
+	text-align: left
+}
+
+#save {
+	width: 5pc
+}
+
+#daohang {
+	margin-left: -870px;
+	padding: 15px;
+	width: 920px;
+	height: 300px;
+	border: 2px solid #f5f5f5;
+	border-top: none
+}
+
+.navdiva {
+	margin-left: 5px;
+	color: #000
+}
+
+#first {
+	border-left: none
+}
+
+.fstfsimple {
+	float: left;
+	height: 100%;
+	border-left: 1px solid #999;
+}
+
+#first a {
+
+
+	margin-left: 5px;
+	width: 45px;
+	height: 25px;
+}
+
+#first a:hover {
+	background-color: #f63;
+}
+
+#second a {
+	
+	width: 70px;
+}
+
+#second a:hover {
+	background-color: #8fbc8f;
+
+}
+
+
+#third a {
+
+	width: 70px;
+	height: 30px;
+}
+
+#third a:hover {
+	background-color: #6a5acd;
+
+}
+
+#forth {
+	width: 225px
+}
+
+#forth a {
+	margin-left: 5px;
+	width: 60px;
+	height: 30px;
+	
+}
+
+#forth a:hover {
+	background-color: #32cd32;
+}
